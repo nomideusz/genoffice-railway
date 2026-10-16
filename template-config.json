@@ -1,0 +1,53 @@
+{
+ "buckets": {},
+ "services": {
+  "d45b5ae5-bd15-45e5-9030-a115830bba7d": {
+   "icon": "https://raw.githubusercontent.com/nomideusz/genoffice-railway/main/icon.png",
+   "name": "genoffice",
+   "deploy": {
+    "startCommand": null,
+    "healthcheckPath": "/healthcheck",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+   },
+   "source": {
+    "repo": "https://github.com/nomideusz/genoffice-railway",
+    "rootDirectory": null
+   },
+   "variables": {
+    "CUSTOM_USER": {
+     "isOptional": false,
+     "description": "Login username for the desktop session.",
+     "defaultValue": "admin"
+    },
+    "PASSWORD": {
+     "isOptional": false,
+     "description": "Login password for the desktop session. Keep it strong - this gates who can use your cloud GenOffice.",
+     "defaultValue": "${{secret(16)}}"
+    },
+    "TZ": {
+     "isOptional": false,
+     "description": "Time zone inside the desktop session.",
+     "defaultValue": "UTC"
+    },
+    "PORT": {
+     "isOptional": false,
+     "description": "Port for Railway healthcheck probing. Do not change.",
+     "defaultValue": "3000"
+    }
+   },
+   "networking": {
+    "serviceDomains": {
+     "<hasDomain>:3000": {
+      "port": 3000
+     }
+    }
+   },
+   "volumeMounts": {
+    "d45b5ae5-bd15-45e5-9030-a115830bba7d": {
+     "mountPath": "/config"
+    }
+   }
+  }
+ }
+}

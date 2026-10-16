@@ -1,0 +1,6 @@
+#!/bin/bash
+# Electron: no sandbox in a container, and Railway's /dev/shm is tiny.
+if [ "${PIXELFLUX_WAYLAND,,}" == "true" ]; then
+  WAYLAND="--ozone-platform=wayland"
+fi
+exec /opt/GenOffice/genoffice --no-sandbox --disable-dev-shm-usage ${WAYLAND} "$@" > /dev/null 2>&1
