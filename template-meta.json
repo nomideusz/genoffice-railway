@@ -3,5 +3,6 @@
   "short_name": "GenOffice",
   "description": "AI office suite: edit Word, Excel, PowerPoint & PDF with an agent. Cloud.",
   "category": "Other",
-  "image": "https://raw.githubusercontent.com/nomideusz/genoffice-railway/main/icon.png"
+  "image": "https://raw.githubusercontent.com/nomideusz/genoffice-railway/main/icon.png",
+  "id": "bd61c2fd-6807-4ab4-b5c7-65877f443a9e"
 }

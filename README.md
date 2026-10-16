@@ -33,7 +33,7 @@ GenOffice is a free alternative to Microsoft Office. It opens and saves real `.d
 
 **Files.** Save documents under `/config` (the home directory), which is on the volume. Drag files into the browser window to upload them, and use the Selkies sidebar to download files back.
 
-**Resources.** RAM_LINE Rendering is CPU-only, since Railway has no GPU. That's fine for documents and slides.
+**Resources.** GenOffice idles at about 420 MB of RAM with almost no CPU. That fits Railway's Trial plan (1 GB), but it's too tight for the Free plan (0.5 GB) once you open documents. Use Hobby for big files or long agent runs. Rendering is CPU-only, since Railway has no GPU. That's fine for documents and slides.
 
 Notes and limits:
 
