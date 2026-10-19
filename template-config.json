@@ -2,7 +2,7 @@
  "buckets": {},
  "services": {
   "d45b5ae5-bd15-45e5-9030-a115830bba7d": {
-   "icon": "https://raw.githubusercontent.com/nomideusz/genoffice-railway/main/icon.png",
+   "icon": "https://raw.githubusercontent.com/two-workspaces/genoffice/main/icon.png",
    "name": "genoffice",
    "deploy": {
     "startCommand": null,
@@ -11,7 +11,7 @@
     "restartPolicyMaxRetries": 10
    },
    "source": {
-    "repo": "https://github.com/nomideusz/genoffice-railway",
+    "repo": "https://github.com/two-workspaces/genoffice",
     "rootDirectory": null
    },
    "variables": {

@@ -23,7 +23,7 @@ GenOffice is a free alternative to Microsoft Office. It opens and saves real `.d
 
 - [GenOffice on GitHub](https://github.com/genspark-ai/genoffice)
 - [linuxserver.io Selkies base image](https://github.com/linuxserver/docker-baseimage-selkies)
-- [Template source on GitHub](https://github.com/nomideusz/genoffice-railway)
+- [Template source on GitHub](https://github.com/two-workspaces/genoffice)
 
 ### Implementation Details
 
