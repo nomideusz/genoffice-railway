@@ -1,5 +1,6 @@
 FROM ghcr.io/linuxserver/baseimage-selkies:debiantrixie-3900c0f0-ls140
 
+# upgrade: github genspark-ai/genoffice
 ARG GENOFFICE_VERSION=0.11.829
 
 ENV TITLE=GenOffice \
